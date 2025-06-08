@@ -23,7 +23,7 @@ It was developed as part of **CS 798: Multicore Programming** at the University 
 |------------------|-------------|
 | `alg_d.h`        | 📌 **Main implementation** — expandable concurrent hash table using dynamic resizing |
 | `alg_a.h`        |  Lock-based static hash table |
-| `alg_b.h`        |  Lock-free static hash table |
+| `alg_b/c.h`        |  Lock-free static hash table |
 | `benchmark.cpp`  | Benchmarking tool to test hash table implementations under multi-threaded load |
 
 ---
@@ -53,6 +53,7 @@ make benchmark
 ```
 
 Key Flags:
+
 -a : Algorithm (A, B, C, or D)
 
 -sT: Initial table size threshold
