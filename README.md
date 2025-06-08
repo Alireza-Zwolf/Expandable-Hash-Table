@@ -1,6 +1,6 @@
 # Expandable Hash Table (Concurrent Probing)
 
-This project implements a set of **concurrent hash tables using probing**, with a focus on an **Expandable Hash Table** that dynamically grows as needed during runtime.
+This project a **concurrent hash table using probing** which is **Expandable** and dynamically grows as needed during runtime.
 
 It was developed as part of **CS 798: Multicore Programming** at the University of Waterloo, and explores different synchronization techniques for designing scalable concurrent data structures.
 
@@ -64,12 +64,15 @@ Key Flags:
 
 -t : Number of threads
 
+---
 
 ## 📈 Evaluation
 
 ![benchmark_results_plot](https://github.com/user-attachments/assets/bbb6936c-c24d-4502-9d96-72c1cb23fb76)
 
 Here is a benchmark result of running static (algorithm a-c) and expandable (algorithm d) hash tables under high workload, where the expandable hash table can support heavy workload up to ~65 million operations on 16 threads ( and ~80 millions on 31 threads).
+
+---
 
 ## Credits
 The benchmark, util, and make files are provided by Dr. [Trevor Brown](https://www.cs.utoronto.ca/~tabrown/).
